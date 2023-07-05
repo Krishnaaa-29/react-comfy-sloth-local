@@ -49,7 +49,7 @@ const CheckoutForm = () => {
   const createPayment = async () => {
     try {
       const data = axios.post(
-        "./.netlify/functions/create-payment",
+        "/.netlify/functions/create-payment",
         JSON.stringify({ cart, shipping_fee, total_amount })
       );
       setClientSecret(data.clientSecret);
