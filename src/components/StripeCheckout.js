@@ -48,7 +48,7 @@ const CheckoutForm = () => {
 
   const createPayment = async () => {
     try {
-      const data = axios.post(
+      const { data } = axios.post(
         "/.netlify/functions/create-payment",
         JSON.stringify({ cart, shipping_fee, total_amount })
       );
@@ -65,8 +65,8 @@ const CheckoutForm = () => {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (ev) => {
+    ev.preventDefault();
     setProcessing(true);
     const payload = await stripe.confirmCardPayment(clientSecret, {
       payment_method: {
@@ -75,6 +75,7 @@ const CheckoutForm = () => {
     });
     if (payload.error) {
       setError(`Payment Failed ${payload.error.message}`);
+      setProcessing(false);
     } else {
       setError(null);
       setProcessing(false);
