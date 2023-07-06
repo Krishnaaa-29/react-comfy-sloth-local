@@ -46,10 +46,10 @@ const CheckoutForm = () => {
     },
   };
 
-  const createPayment = async () => {
+  const createPaymentIntent = async () => {
     try {
       const { data } = axios.post(
-        "/.netlify/functions/create-payment",
+        "/.netlify/functions/create-payment-intent",
         JSON.stringify({ cart, shipping_fee, total_amount })
       );
       setClientSecret(data.clientSecret);
@@ -57,7 +57,7 @@ const CheckoutForm = () => {
   };
 
   useEffect(() => {
-    createPayment();
+    createPaymentIntent();
     //eslint-disable-next-line
   }, []);
 
