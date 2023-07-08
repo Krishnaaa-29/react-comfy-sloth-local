@@ -13,11 +13,9 @@ const Hero = () => {
           <span style={{ lineHeight: 1.4 }}>comfort zone</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          officia cum hic tenetur culpa at ab eos praesentium, fugiat dolore
-          mollitia doloribus quod possimus. Accusantium repellendus modi quos
-          mollitia, voluptate doloremque atque consequatur reiciendis dolore
-          qui, vel omnis quas sint?
+          Welcome to Home@7, your one-stop website for all your home decor needs
+          in a lavish house. We cater to the demands of all individuals and
+          offer a wide variety of products to suit every style and preference.
         </p>
         <Link to="/products" className="btn">
           shop now
