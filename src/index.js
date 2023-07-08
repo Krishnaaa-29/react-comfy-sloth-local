@@ -8,10 +8,10 @@ import { FilterProvider } from "./context/filter_context";
 import { CartProvider } from "./context/cart_context";
 import { UserProvider } from "./context/user_context";
 import { Auth0Provider } from "@auth0/auth0-react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-//dev-cgosstzv7dnmd2yw.us.auth0.com
-//8u1Sd12pghIAGJumtyVv5sYoWRZaom84
 
 root.render(
   <Auth0Provider
@@ -27,6 +27,7 @@ root.render(
         <FilterProvider>
           <CartProvider>
             <App />
+            <ToastContainer position="top-center" />
           </CartProvider>
         </FilterProvider>
       </ProductsProvider>
