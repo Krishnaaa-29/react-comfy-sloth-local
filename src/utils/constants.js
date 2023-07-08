@@ -25,19 +25,19 @@ export const services = [
     id: 1,
     icon: <GiCompass />,
     title: "mission",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    text: "To provide a hassle-free experience to every customer such that they can sit back at home and decide what's best for their home.",
   },
   {
     id: 2,
     icon: <GiDiamondHard />,
     title: "vision",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    text: "To become No.1 Home Decor Company in all of the world while delivering top service and quality to all the customers",
   },
   {
     id: 3,
     icon: <GiStabbedNote />,
     title: "history",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    text: "We have a impeccable record of delivering all goods on time and meeting the expectations of our customers without fail.",
   },
 ];
 

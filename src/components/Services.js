@@ -11,9 +11,10 @@ const Services = () => {
             custom furniture <br /> built only for you
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            minima, ipsam molestiae rem, necessitatibus saepe officiis illum
-            quasi tenetur excepturi ducimus quia voluptate vitae repudiandae!
+            At Home@7, we're committed to bringing you the best home decor
+            products, a user-friendly experience, and a secure shopping
+            environment. Enjoy browsing our extensive collection and
+            transforming your house into the luxurious home of your dreams.
           </p>
         </article>
         <div className="services-center">
